@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d1e" />
+      <stop offset="50%" stop-color="#0e1329" />
+      <stop offset="100%" stop-color="#060813" />
+    </linearGradient>
+
+    <linearGradient id="borderGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.7" />
+      <stop offset="50%" stop-color="#ec4899" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.7" />
+    </linearGradient>
+
+    <linearGradient id="boxGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+
+    <linearGradient id="boxGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#09182b" stop-opacity="0.9" />
+    </linearGradient>
+
+    <linearGradient id="boxGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a1236" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#120e24" stop-opacity="0.9" />
+    </linearGradient>
+
+    <linearGradient id="boxGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#192019" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#0d1819" stop-opacity="0.9" />
+    </linearGradient>
+
+    <pattern id="gridPattern" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#4338ca" stroke-width="0.8" stroke-opacity="0.08" />
+    </pattern>
+
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+  </style>
+
+  <!-- Container -->
+  <rect width="1200" height="360" rx="16" fill="url(#cardBg)" />
+  <rect width="1200" height="360" rx="16" fill="url(#gridPattern)" />
+  <rect x="1.5" y="1.5" width="1197" height="357" rx="15" fill="none" stroke="url(#borderGrad2)" stroke-width="1.5" />
+
+  <!-- Section Header inside Card -->
+  <g transform="translate(36, 32)">
+    <rect width="180" height="24" rx="6" fill="#1e1b4b" stroke="#6366f1" stroke-width="1" />
+    <text x="14" y="16" fill="#a5b4fc" font-size="11" font-weight="700" letter-spacing="1.5" class="mono">TECH SPECIFICATIONS</text>
+    <text x="200" y="18" fill="#f8fafc" font-size="18" font-weight="800" class="sans">Engineering Domains &amp; Competencies</text>
+  </g>
+
+  <!-- 4 Column Feature Cards -->
+  <!-- Box 1: Discord Bot Engineering -->
+  <g transform="translate(36, 80)" filter="url(#softShadow)">
+    <rect width="265" height="245" rx="12" fill="url(#boxGrad1)" stroke="#6366f1" stroke-width="1.2" stroke-opacity="0.7" />
+    <g transform="translate(20, 24)">
+      <!-- Icon pill -->
+      <rect width="36" height="36" rx="8" fill="#5865F2" />
+      <text x="18" y="24" fill="#ffffff" font-size="18" text-anchor="middle" font-weight="bold" class="sans">⚡</text>
+      
+      <text x="48" y="18" fill="#ffffff" font-size="15" font-weight="700" class="sans">Discord Bots</text>
+      <text x="48" y="34" fill="#818cf8" font-size="11" font-weight="600" class="mono">ARCH &amp; AUTOMATION</text>
+
+      <line x1="0" y1="52" x2="225" y2="52" stroke="#3730a3" stroke-width="1" />
+
+      <!-- Capabilities -->
+      <g transform="translate(0, 72)">
+        <text x="0" y="0" fill="#e2e8f0" font-size="13" font-weight="600" class="sans">✦ Slash Commands (v14)</text>
+        <text x="0" y="24" fill="#e2e8f0" font-size="13" font-weight="600" class="sans">✦ Event-driven Architecture</text>
+        <text x="0" y="48" fill="#e2e8f0" font-size="13" font-weight="600" class="sans">✦ REST API &amp; Webhooks</text>
+        <text x="0" y="72" fill="#e2e8f0" font-size="13" font-weight="600" class="sans">✦ 24/7 Resilient Systems</text>
+      </g>
+
+      <!-- Tech Tag -->
+      <rect x="0" y="162" width="225" height="26" rx="6" fill="#1e1b4b" stroke="#4f46e5" stroke-width="1" />
+      <text x="112" y="179" fill="#c7d2fe" font-size="11" font-weight="700" text-anchor="middle" class="mono">NODE.JS • JAVASCRIPT</text>
+    </g>
+  </g>
+
+  <!-- Box 2: Modern Web Development -->
+  <g transform="translate(325, 80)" filter="url(#softShadow)">
+    <rect width="265" height="245" rx="12" fill="url(#boxGrad2)" stroke="#06b6d4" stroke-width="1.2" stroke-opacity="0.7" />
+    <g transform="translate(20, 24)">
+      <!-- Icon pill -->
+      <rect width="36" height="36" rx="8" fill="#0891b2" />
+      <text x="18" y="24" fill="#ffffff" font-size="18" text-anchor="middle" font-weight="bold" class="sans">🌐</text>
+      
+      <text x="48" y="18" fill="#ffffff" font-size="15" font-weight="700" class="sans">Web Development</text>
+      <text x="48" y="34" fill="#38bdf8" font-size="11" font-weight="600" class="mono">FRONTEND &amp; UI/UX</text>
+
+      <line x1="0" y1="52" x2="225" y2="52" stroke="#0e7490" stroke-width="1" stroke-opacity="0.5" />
+
+      <!-- Capabilities -->
+      <g transform="translate(0, 72)">
+        <text x="0" y="0" fill="#e2e8f0" font-size="13" font-weight="600" class="sans">✦ Semantic HTML5 &amp; CSS3</text>
+        <text x="0" y="24" fill="#e2e8f0" font-size="13" font-weight="600" class="sans">✦ Responsive Layouts &amp; Flex</text>
+        <text x="0" y="48" fill="#e2e8f0" font-size="13" font-weight="600" class="sans">✦ Vanilla JS &amp; DOM Logic</text>
+        <text x="0" y="72" fill="#e2e8f0" font-size="13" font-weight="600" class="sans">✦ Dark Mode &amp; Modern UI</text>
+      </g>
+
+      <!-- Tech Tag -->
+      <rect x="0" y="162" width="225" height="26" rx="6" fill="#082f49" stroke="#0284c7" stroke-width="1" />
+      <text x="112" y="179" fill="#bae6fd" font-size="11" font-weight="700" text-anchor="middle" class="mono">HTML5 • CSS3 • JS</text>
+    </g>
+  </g>
+
+  <!-- Box 3: Systems & Compiled -->
+  <g transform="translate(614, 80)" filter="url(#softShadow)">
+    <rect width="265" height="245" rx="12" fill="url(#boxGrad3)" stroke="#ec4899" stroke-width="1.2" stroke-opacity="0.7" />
+    <g transform="translate(20, 24)">
+      <!-- Icon pill -->
+      <rect width="36" height="36" rx="8" fill="#be185d" />
+      <text x="18" y="24" fill="#ffffff" font-size="18" text-anchor="middle" font-weight="bold" class="sans">⚙️</text>
+      
+      <text x="48" y="18" fill="#ffffff" font-size="15" font-weight="700" class="sans">Systems &amp; Native</text>
+      <text x="48" y="34" fill="#f472b6" font-size="11" font-weight="600" class="mono">PERFORMANCE &amp; SPEED</text>
+
+      <line x1="0" y1="52" x2="225" y2="52" stroke="#831843" stroke-width="1" stroke-opacity="0.6" />
+
+      <!-- Capabilities -->
+      <g transform="translate(0, 72)">
+        <text x="0" y="0" fill="#e2e8f0" font-size="13" font-weight="600" class="sans">✦ Rust Memory Safety</text>
+        <text x="0" y="24" fill="#e2e8f0" font-size="13" font-weight="600" class="sans">✦ C++ OOP &amp; Data Structures</text>
+        <text x="0" y="48" fill="#e2e8f0" font-size="13" font-weight="600" class="sans">✦ C# Desktop &amp; Tools</text>
+        <text x="0" y="72" fill="#e2e8f0" font-size="13" font-weight="600" class="sans">✦ Low-Level C Foundations</text>
+      </g>
+
+      <!-- Tech Tag -->
+      <rect x="0" y="162" width="225" height="26" rx="6" fill="#3b0764" stroke="#701a75" stroke-width="1" />
+      <text x="112" y="179" fill="#f5d0fe" font-size="11" font-weight="700" text-anchor="middle" class="mono">RUST • C++ • C# • C</text>
+    </g>
+  </g>
+
+  <!-- Box 4: Python & Scripting -->
+  <g transform="translate(903, 80)" filter="url(#softShadow)">
+    <rect width="261" height="245" rx="12" fill="url(#boxGrad4)" stroke="#10b981" stroke-width="1.2" stroke-opacity="0.7" />
+    <g transform="translate(20, 24)">
+      <!-- Icon pill -->
+      <rect width="36" height="36" rx="8" fill="#047857" />
+      <text x="18" y="24" fill="#ffffff" font-size="18" text-anchor="middle" font-weight="bold" class="sans">🐍</text>
+      
+      <text x="48" y="18" fill="#ffffff" font-size="15" font-weight="700" class="sans">Python Scripting</text>
+      <text x="48" y="34" fill="#34d399" font-size="11" font-weight="600" class="mono">AUTOMATION &amp; DATA</text>
+
+      <line x1="0" y1="52" x2="221" y2="52" stroke="#065f46" stroke-width="1" stroke-opacity="0.6" />
+
+      <!-- Capabilities -->
+      <g transform="translate(0, 72)">
+        <text x="0" y="0" fill="#e2e8f0" font-size="13" font-weight="600" class="sans">✦ Automation &amp; Scraping</text>
+        <text x="0" y="24" fill="#e2e8f0" font-size="13" font-weight="600" class="sans">✦ Backend Script Logic</text>
+        <text x="0" y="48" fill="#e2e8f0" font-size="13" font-weight="600" class="sans">✦ Algorithm Problem Solving</text>
+        <text x="0" y="72" fill="#e2e8f0" font-size="13" font-weight="600" class="sans">✦ Bot &amp; CLI Toolkits</text>
+      </g>
+
+      <!-- Tech Tag -->
+      <rect x="0" y="162" width="221" height="26" rx="6" fill="#064e3b" stroke="#059669" stroke-width="1" />
+      <text x="110" y="179" fill="#a7f3d0" font-size="11" font-weight="700" text-anchor="middle" class="mono">PYTHON 3.x • SCRIPTS</text>
+    </g>
+  </g>
+</svg>

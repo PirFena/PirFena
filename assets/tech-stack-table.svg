@@ -1,0 +1,241 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="tblBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d1f" />
+      <stop offset="50%" stop-color="#0e1329" />
+      <stop offset="100%" stop-color="#050711" />
+    </linearGradient>
+
+    <!-- Outer Border Gradient -->
+    <linearGradient id="tblBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#a855f7" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.8" />
+    </linearGradient>
+
+    <!-- Row Border Gradient -->
+    <linearGradient id="rowBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#312e81" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#6366f1" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#312e81" stop-opacity="0.4" />
+    </linearGradient>
+
+    <!-- Subtle Dot Pattern -->
+    <pattern id="tableDots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#6366f1" fill-opacity="0.08" />
+    </pattern>
+  </defs>
+
+  <style>
+    .font-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .badge-text { font-size: 12px; font-weight: 700; text-anchor: middle; }
+    .cat-text { font-size: 14px; font-weight: 700; fill: #f8fafc; }
+  </style>
+
+  <!-- Container Box -->
+  <rect width="1200" height="340" rx="16" fill="url(#tblBg)" stroke="url(#tblBorder)" stroke-width="1.5" />
+  <rect width="1200" height="340" rx="16" fill="url(#tableDots)" />
+
+  <!-- Table Header Bar -->
+  <g transform="translate(30, 22)">
+    <rect width="1140" height="38" rx="8" fill="#131733" stroke="#3730a3" stroke-width="1" stroke-opacity="0.8" />
+    <text x="24" y="24" fill="#a5b4fc" font-size="11" font-weight="800" letter-spacing="1.5" class="font-mono">DOMAIN CATEGORY</text>
+    <text x="320" y="24" fill="#a5b4fc" font-size="11" font-weight="800" letter-spacing="1.5" class="font-mono">TECHNOLOGIES &amp; TOOLKIT</text>
+    <text x="960" y="24" fill="#a5b4fc" font-size="11" font-weight="800" letter-spacing="1.5" class="font-mono">EXPERTISE FOCUS</text>
+  </g>
+
+  <!-- ================= ROW 1: CORE LANGUAGES ================= -->
+  <g transform="translate(30, 74)">
+    <rect width="1140" height="56" rx="10" fill="#0d1124" fill-opacity="0.8" stroke="url(#rowBorder)" stroke-width="1" />
+    <text x="24" y="34" class="font-sans cat-text">Core Languages</text>
+
+    <!-- Badges Container -->
+    <g transform="translate(320, 14)">
+      <!-- JavaScript -->
+      <g transform="translate(0, 0)">
+        <rect width="102" height="28" rx="6" fill="#201d13" stroke="#eab308" stroke-width="1" />
+        <circle cx="14" cy="14" r="3.5" fill="#facc15" />
+        <text x="58" y="18" fill="#fef08a" class="font-sans badge-text">JavaScript</text>
+      </g>
+
+      <!-- Python -->
+      <g transform="translate(110, 0)">
+        <rect width="86" height="28" rx="6" fill="#141c38" stroke="#3b82f6" stroke-width="1" />
+        <circle cx="14" cy="14" r="3.5" fill="#38bdf8" />
+        <text x="50" y="18" fill="#bae6fd" class="font-sans badge-text">Python</text>
+      </g>
+
+      <!-- Rust -->
+      <g transform="translate(204, 0)">
+        <rect width="74" height="28" rx="6" fill="#251614" stroke="#f97316" stroke-width="1" />
+        <circle cx="14" cy="14" r="3.5" fill="#fb923c" />
+        <text x="44" y="18" fill="#fdba74" class="font-sans badge-text">Rust</text>
+      </g>
+
+      <!-- C++ -->
+      <g transform="translate(286, 0)">
+        <rect width="68" height="28" rx="6" fill="#131c36" stroke="#0284c7" stroke-width="1" />
+        <circle cx="14" cy="14" r="3.5" fill="#38bdf8" />
+        <text x="41" y="18" fill="#bae6fd" class="font-sans badge-text">C++</text>
+      </g>
+
+      <!-- C# -->
+      <g transform="translate(362, 0)">
+        <rect width="64" height="28" rx="6" fill="#1e1333" stroke="#a855f7" stroke-width="1" />
+        <circle cx="14" cy="14" r="3.5" fill="#c084fc" />
+        <text x="39" y="18" fill="#e9d5ff" class="font-sans badge-text">C#</text>
+      </g>
+
+      <!-- C -->
+      <g transform="translate(434, 0)">
+        <rect width="52" height="28" rx="6" fill="#111827" stroke="#64748b" stroke-width="1" />
+        <circle cx="14" cy="14" r="3.5" fill="#94a3b8" />
+        <text x="33" y="18" fill="#cbd5e1" class="font-sans badge-text">C</text>
+      </g>
+    </g>
+
+    <!-- Expertise Pill -->
+    <g transform="translate(960, 16)">
+      <rect width="150" height="24" rx="12" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.2" />
+      <text x="75" y="16" fill="#c7d2fe" font-size="11" font-weight="700" text-anchor="middle" class="font-mono">DAILY DRIVER</text>
+    </g>
+  </g>
+
+  <!-- ================= ROW 2: WEB & NODE.JS ================= -->
+  <g transform="translate(30, 138)">
+    <rect width="1140" height="56" rx="10" fill="#0d1124" fill-opacity="0.8" stroke="url(#rowBorder)" stroke-width="1" />
+    <text x="24" y="34" class="font-sans cat-text">Web &amp; Node.js</text>
+
+    <!-- Badges Container -->
+    <g transform="translate(320, 14)">
+      <!-- Node.js -->
+      <g transform="translate(0, 0)">
+        <rect width="90" height="28" rx="6" fill="#142617" stroke="#22c55e" stroke-width="1" />
+        <circle cx="14" cy="14" r="3.5" fill="#4ade80" />
+        <text x="52" y="18" fill="#bbf7d0" class="font-sans badge-text">Node.js</text>
+      </g>
+
+      <!-- HTML5 -->
+      <g transform="translate(98, 0)">
+        <rect width="82" height="28" rx="6" fill="#2d1512" stroke="#ea580c" stroke-width="1" />
+        <circle cx="14" cy="14" r="3.5" fill="#fb923c" />
+        <text x="48" y="18" fill="#ffedd5" class="font-sans badge-text">HTML5</text>
+      </g>
+
+      <!-- CSS3 -->
+      <g transform="translate(188, 0)">
+        <rect width="78" height="28" rx="6" fill="#0e2338" stroke="#0284c7" stroke-width="1" />
+        <circle cx="14" cy="14" r="3.5" fill="#38bdf8" />
+        <text x="46" y="18" fill="#e0f2fe" class="font-sans badge-text">CSS3</text>
+      </g>
+
+      <!-- Responsive Design -->
+      <g transform="translate(274, 0)">
+        <rect width="140" height="28" rx="6" fill="#241433" stroke="#a855f7" stroke-width="1" />
+        <circle cx="14" cy="14" r="3.5" fill="#c084fc" />
+        <text x="77" y="18" fill="#f3e8ff" class="font-sans badge-text">Responsive Design</text>
+      </g>
+
+      <!-- Web APIs -->
+      <g transform="translate(422, 0)">
+        <rect width="112" height="28" rx="6" fill="#162238" stroke="#38bdf8" stroke-width="1" />
+        <circle cx="14" cy="14" r="3.5" fill="#38bdf8" />
+        <text x="63" y="18" fill="#bae6fd" class="font-sans badge-text">Fetch / REST</text>
+      </g>
+    </g>
+
+    <!-- Expertise Pill -->
+    <g transform="translate(960, 16)">
+      <rect width="150" height="24" rx="12" fill="#062d29" stroke="#10b981" stroke-width="1.2" />
+      <text x="75" y="16" fill="#6ee7b7" font-size="11" font-weight="700" text-anchor="middle" class="font-mono">FULLSTACK LOGIC</text>
+    </g>
+  </g>
+
+  <!-- ================= ROW 3: DISCORD ENGINEERING ================= -->
+  <g transform="translate(30, 202)">
+    <rect width="1140" height="56" rx="10" fill="#0d1124" fill-opacity="0.8" stroke="url(#rowBorder)" stroke-width="1" />
+    <text x="24" y="34" class="font-sans cat-text">Discord Engineering</text>
+
+    <!-- Badges Container -->
+    <g transform="translate(320, 14)">
+      <!-- Discord.js -->
+      <g transform="translate(0, 0)">
+        <rect width="105" height="28" rx="6" fill="#1e1f4b" stroke="#5865F2" stroke-width="1" />
+        <circle cx="14" cy="14" r="3.5" fill="#818cf8" />
+        <text x="60" y="18" fill="#e0e7ff" class="font-sans badge-text">Discord.js</text>
+      </g>
+
+      <!-- Slash Commands -->
+      <g transform="translate(113, 0)">
+        <rect width="140" height="28" rx="6" fill="#122538" stroke="#0ea5e9" stroke-width="1" />
+        <circle cx="14" cy="14" r="3.5" fill="#38bdf8" />
+        <text x="77" y="18" fill="#e0f2fe" class="font-sans badge-text">Slash Commands</text>
+      </g>
+
+      <!-- Discord REST API -->
+      <g transform="translate(261, 0)">
+        <rect width="138" height="28" rx="6" fill="#2d132b" stroke="#ec4899" stroke-width="1" />
+        <circle cx="14" cy="14" r="3.5" fill="#f472b6" />
+        <text x="76" y="18" fill="#fce7f3" class="font-sans badge-text">Discord REST API</text>
+      </g>
+
+      <!-- Gateway Sharding -->
+      <g transform="translate(407, 0)">
+        <rect width="138" height="28" rx="6" fill="#192e27" stroke="#10b981" stroke-width="1" />
+        <circle cx="14" cy="14" r="3.5" fill="#34d399" />
+        <text x="76" y="18" fill="#d1fae5" class="font-sans badge-text">Gateway Sharding</text>
+      </g>
+    </g>
+
+    <!-- Expertise Pill -->
+    <g transform="translate(960, 16)">
+      <rect width="150" height="24" rx="12" fill="#2e1065" stroke="#8b5cf6" stroke-width="1.2" />
+      <text x="75" y="16" fill="#d8b4fe" font-size="11" font-weight="700" text-anchor="middle" class="font-mono">BOT SPECIALIST</text>
+    </g>
+  </g>
+
+  <!-- ================= ROW 4: SYSTEMS & ARCHITECTURE ================= -->
+  <g transform="translate(30, 266)">
+    <rect width="1140" height="56" rx="10" fill="#0d1124" fill-opacity="0.8" stroke="url(#rowBorder)" stroke-width="1" />
+    <text x="24" y="34" class="font-sans cat-text">Systems &amp; Architecture</text>
+
+    <!-- Badges Container -->
+    <g transform="translate(320, 14)">
+      <!-- Rust Ownership -->
+      <g transform="translate(0, 0)">
+        <rect width="125" height="28" rx="6" fill="#251614" stroke="#f97316" stroke-width="1" />
+        <circle cx="14" cy="14" r="3.5" fill="#fb923c" />
+        <text x="70" y="18" fill="#ffedd5" class="font-sans badge-text">Rust Ownership</text>
+      </g>
+
+      <!-- C++ Performance -->
+      <g transform="translate(133, 0)">
+        <rect width="135" height="28" rx="6" fill="#131c36" stroke="#38bdf8" stroke-width="1" />
+        <circle cx="14" cy="14" r="3.5" fill="#38bdf8" />
+        <text x="75" y="18" fill="#e0f2fe" class="font-sans badge-text">C++ Performance</text>
+      </g>
+
+      <!-- C# App Solutions -->
+      <g transform="translate(276, 0)">
+        <rect width="128" height="28" rx="6" fill="#1e1333" stroke="#a855f7" stroke-width="1" />
+        <circle cx="14" cy="14" r="3.5" fill="#c084fc" />
+        <text x="71" y="18" fill="#f3e8ff" class="font-sans badge-text">C# App Solutions</text>
+      </g>
+
+      <!-- Memory & Pointers -->
+      <g transform="translate(412, 0)">
+        <rect width="138" height="28" rx="6" fill="#15212d" stroke="#64748b" stroke-width="1" />
+        <circle cx="14" cy="14" r="3.5" fill="#94a3b8" />
+        <text x="76" y="18" fill="#e2e8f0" class="font-sans badge-text">Memory &amp; Pointers</text>
+      </g>
+    </g>
+
+    <!-- Expertise Pill -->
+    <g transform="translate(960, 16)">
+      <rect width="150" height="24" rx="12" fill="#18233c" stroke="#38bdf8" stroke-width="1.2" />
+      <text x="75" y="16" fill="#7dd3fc" font-size="11" font-weight="700" text-anchor="middle" class="font-mono">HIGH PERFORMANCE</text>
+    </g>
+  </g>
+</svg>
